@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea 9</title>
+</head>
+<body>
+
+  <div class="fondo">
+  <div class="d-flex align-items-center">
+    <h1 style="text-align: center; color: rgb(255, 255, 255);
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+     Busqueda de peliculas</h1>
+  
+    <div class="container">
+    <div class="BarraB">
+      <input type="text" [(ngModel)]="searchQuery" placeholder="Ingrese titulo de pelicula" (keydown.enter)="searchMovies()">
+      <button class="Boton" (click)="searchMovies()">Buscar</button>
+    </div>
+  </div>
+
+    <div *ngIf="movies && movies.length > 0">
+        <ul class="Info">
+        <li *ngFor="let movie of movies">
+          <div class="d-flex align-items-center">
+            <a href="https://www.themoviedb.org/movie/{{movie.id}}" target="_blank"><img [src]="movie.image" alt="{{movie.title}}" class="img-movie mr-3"  (load)="onImageLoad(movie)" [ngClass]="{'loaded': movie.loaded}" style="max-width: 100px;"></a>
+            <div>
+              <a href="https://www.themoviedb.org/movie/{{movie.id}}" target="_blank">{{movie.title}}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="movies && movies.length === 0">
+      <H2 style="color: aliceblue;">Sin resultados</H2>
+  </div>
+
+<mat-toolbar color="primary" class="footer">
+  <div class="footer-container">
+  <i class="fab fa-angular" style="margin-right:50px;"></i>
+  <i class="fab fa-github" style="margin-right:50px;" ></i>
+  <i class="fab fa-windows" style="margin-right:50px;" ></i>
+  <i class="fab fa-html5" style="margin-right:50px;" ></i>
+  <i class="fab fa-css3-alt" style="margin-right:50px;" ></i>
+  <i class="fab fa-js" style="margin-right:50px;" ></i>
+  <i class="fa-regular fa-copyright" style="margin-right: 50px;" ></i>
+
+</div>
+
+</mat-toolbar>
+
+</div>
+</div>
+</body>
+</html>
+
+
+
