@@ -39,6 +39,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -124,5 +125,40 @@ a{
     transform: scale(1.5);
     cursor: pointer;
 }
-  
 
+.java-icon:hover {
+  --fa-inverse: #eeff00;
+  transition: color 0.5s ease-in-out;
+}
+
+.css3-icon:hover{
+  --fa-inverse: #00ccff;
+  transition: color 0.5s ease-in-out;
+}
+
+.html5-icon:hover{
+  --fa-inverse: #ffc400;
+  transition: color 0.5s ease-in-out;
+}
+
+.windows-icon:hover{
+  --fa-inverse: #00ffff;
+  transition: color 0.5s ease-in-out;
+}
+
+.github-icon:hover{
+  --fa-inverse: #000000;
+  transition: color 0.5s ease-in-out;
+
+}
+
+.angular-icon:hover{
+  --fa-inverse: #ff0000;
+  transition: color 0.5s ease-in-out;
+}
+
+.footer-container .copyright-icon {
+  position: absolute;
+  right: 50px;
+  font-size:large;
+}
