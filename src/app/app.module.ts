@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';//Modulo de iconos font awesome
 import { faFilm } from '@fortawesome/free-solid-svg-icons';//Modulo de iconos Fafilm
 import { faFish } from '@fortawesome/free-solid-svg-icons';//Modulo de iconos Fafilm
+import {MatButtonModule} from '@angular/material/button';//Modulo de botones
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { faFish } from '@fortawesome/free-solid-svg-icons';//Modulo de iconos Fa
     HttpClientModule,
     FormsModule,
     FontAwesomeModule,
+    MatButtonModule,
     BrowserAnimationsModule,
     MatToolbarModule
   ],

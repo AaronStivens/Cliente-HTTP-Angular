@@ -1,8 +1,11 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
-.body, html{
-  overflow-y: 0;
+h1{
+  color: #fff;
+  text-shadow: #ee3939 0 0 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -69,13 +72,13 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
     transition: background-color 0.5s ease-in-out;
-    background-color: #ffffff;
     color: #000000;
 
   }
   .Boton:hover{
       cursor: pointer; 
-      background-color: #e6ff01;
+      background-color: #d9ff02;
+      color: #000000;
 
   }
 
@@ -112,6 +115,7 @@ a{
   .img-movie {
     opacity: 0;
     transition: opacity 0.8s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 5px;
 
   }
   

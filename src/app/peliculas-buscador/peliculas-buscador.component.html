@@ -22,7 +22,7 @@
     <div class="container">
     <div class="BarraB">
       <input type="text" [(ngModel)]="searchQuery" placeholder="Ingrese titulo de pelicula" (keydown.enter)="searchMovies()">
-      <button class="Boton" (click)="searchMovies()">Buscar</button>
+      <button mat-raised-button color="primary" class="Boton" (click)="searchMovies()">Buscar</button>
     </div>
   </div>
 
