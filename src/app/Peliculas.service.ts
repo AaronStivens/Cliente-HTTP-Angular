@@ -4,6 +4,8 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
+//Aqui se define el servicio para consumir la API incluyendo la KEY si es necesario
 export class MovieService {
 
   private apiKey = '462a1e5c4c5b6679d1af55fd95e64538';

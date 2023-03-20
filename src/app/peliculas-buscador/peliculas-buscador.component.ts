@@ -14,6 +14,7 @@ export class PeliculasBuscadorComponent {
   searchQuery: any;
   movies: any;
 
+  //Aqui se define el buscador que devuelve datos de la API
   constructor(private movieService: MovieService) { }
 
   searchMovies() {
