@@ -1,13 +1,13 @@
 {
   "name": "tarea9",
   "version": "0.0.0",
+  "Description": "Tarea 9 / Cliente HTTP",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "Description": "Tarea 9 / Cliente HTTP"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
